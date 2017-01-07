@@ -1,0 +1,20 @@
+{
+  "name": "URL Shorterner",
+  "version": "1.0.0",
+  "description": "A simple API Service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuyangGong/URLShortener.git"
+  },
+  "keywords": [],
+  "author": "Yuyang <421736079@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YuyangGong/URLShortener/issues"
+  },
+  "homepage": "https://github.com/YuyangGong/URLShortener#readme"
+}
