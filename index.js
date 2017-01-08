@@ -13,13 +13,23 @@ app.get('/', function(req, res) {
 	});
 });
 
-app.get('/:url', function(req, res) {
-	var url = req.param.url;
+app.get('/new/:url', function(req, res) {
+	var url = req.params.url;
 	if(/^https?:\/\/([a-z]+\.)?[a-z]+\.[a-z]+$/i.test(url)) {
 
 	}
 	else {
 		res.json({"error":"Wrong url format, make sure you have a valid protocol and real site."});
+	}
+})
+
+app.get('/:num', function(req, res) {
+	var url = req.params.num;
+	if(/^\d+$/.test(url)) {
+
+	}
+	else {
+		res.json({"error":"Wrong format, make sure you have a valid order or site."});
 	}
 })
 
