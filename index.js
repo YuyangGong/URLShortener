@@ -3,8 +3,6 @@ var express = require('express'),
 	app = new express(),
 	port = process.env.PORT || 4000,
 	mongo = require('mongodb').MongoClient,
-	user = process.env.USER,
-	password = process.env.PASSWORD,
 	data_url = process.env.MONGO_URL;
 
 app.use(express.static(__dirname + '/public'));
