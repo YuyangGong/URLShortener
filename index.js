@@ -1,6 +1,6 @@
 var express = require('express'),
 	app = new express(),
-	port = process.env.PORT || 4000,
+	port = process.env.PORT || 3000,
 	mongo = require('mongodb').MongoClient;
 
 app.use(express.static(__dirname + '/public'));
