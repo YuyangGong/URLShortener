@@ -15,9 +15,8 @@ app.get('/', function(req, res) {
 	});
 });
 
-app.get('/new/:url', function(req, res) {
-	var url = req.params.url;
-	console.log(url);
+app.get('/new/:url://:name', function(req, res) {
+	var url = req.params.url + '://' + req.params.name;
 	if(/^https?:\/\/([a-z]+\.)?[a-z]+\.[a-z]+$/i.test(url)) {
 		mongo.connect(data_url, function(err, db) {
 			let match_url, num;
